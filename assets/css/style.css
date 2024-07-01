@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #323a45;
+  font-size: 10px;
+}
+
+/*! Grid Layout */
+body {
+  margin: 0 40px;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 103px 1fr 103px;
+
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+  background: #ffffff;
+}
+h1 {
+  font-size: 20px;
+  color: #323a45;
+}
+
+/* HEADER */
+header {
+  border: 1px solid black;
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline;
+}
+nav ul li a {
+  margin-left: 60px;
+}
+
+/* MAIN */
+main {
+  grid-area: main;
+  border: 1px solid #333;
+}
+.product_desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.product_info h3 {
+  color: #000000;
+  font-size: 15px;
+}
+.product_info h4 {
+  margin: 20px 0;
+  color: #848484;
+  font-size: 15px;
+}
+.product_preis h3 {
+  color: #000000;
+  font-size: 15px;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "ein zwei drei"
+    "vier fuenf sechs";
+  grid-gap: 20px;
+}
+
+.product-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.product-container_ein {
+  grid-area: ein;
+}
+.product-container_zwei {
+  grid-area: zwei;
+}
+.product-container_drei {
+  grid-area: drei;
+}
+.product-container_vier {
+  grid-area: vier;
+}
+.product-container_fuenf {
+  grid-area: fuenf;
+}
+.product-container_sechs {
+  grid-area: sechs;
+}
+
+/* FOOTER */
+footer {
+  border: 1px solid #333;
+  grid-area: footer;
+}
+footer div {
+  display: grid;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
