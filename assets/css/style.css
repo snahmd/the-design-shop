@@ -82,7 +82,7 @@ main {
 .product-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 49% 49% 49%;
   grid-template-areas:
     "ein zwei drei"
     "vier fuenf sechs";
